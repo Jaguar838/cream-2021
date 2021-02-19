@@ -281,10 +281,12 @@
 .product-name::after {
   content: '';
   display: block;
+  margin-right: auto;
+  margin-left: auto;
   width: 26px;
   height: 6px;
   margin-top: 30px;
-  background-image: url('../images/product/sprite.svg#icon-ellipsis');
+  background-image: url('../images/product/ellipsis.svg');
 }
 .product-description {
   font-family: DM Sans;
