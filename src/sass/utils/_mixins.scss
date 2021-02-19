@@ -1,25 +1,48 @@
 @mixin for-size($size) {
   @if $size == responsive {
-    @media (max-width: 319px) { @content; }
+    @media (max-width: 319px) {
+      @content;
+    }
   } @else if $size == phone {
-    @media (min-width: 320px) { @content; }
-  } @else if $size == max-phone{
-    @media (max-width: 767px) { @content; }
+    @media (min-width: 320px) {
+      @content;
+    }
+  } @else if $size == max-phone {
+    @media (max-width: 767px) {
+      @content;
+    }
   } @else if $size == tablet {
-    @media (min-width: 768px) { @content; }
-  } @else if $size == max-tablet{
-    @media (max-width: 1199px) { @content; }
+    @media (min-width: 768px) {
+      @content;
+    }
+  } @else if $size == max-tablet {
+    @media (max-width: 1199px) {
+      @content;
+    }
   } @else if $size == desktop {
-    @media (min-width: 1200px) { @content; }
+    @media (min-width: 1200px) {
+      @content;
+    }
   }
 }
 
-@mixin to-size($phone:phone,$max-phone:max-phone) {
-    @include for-size($phone) {
-        @include for-size($max-phone) {
-            @content; 
-        }
-    }  
+@mixin to-size($phone: phone, $max-phone: max-phone) {
+  @include for-size($phone) {
+    @include for-size($max-phone) {
+      @content;
+    }
+  }
+}
+@mixin flexbox($d: flex, $jc: center, $ai: center, $w: nowrap) {
+  display: $d;
+  justify-content: $jc;
+  align-items: $ai;
+  flex-wrap: $w;
+}
+@mixin font($fs, $lh, $fw: 500) {
+  font-size: $fs;
+  line-height: $lh;
+  font-weight: $fw;
 }
 
 // // Пример использования миксина медиазапросов
@@ -44,7 +67,6 @@
 //   @include for-size(tablet) {
 //     width: 768px;
 //   }
-  
 
 // // для диапазона 768-1199рх
 // @include to-size(tablet, max-tablet) {
