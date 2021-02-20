@@ -532,77 +532,36 @@ header .container {
   }
 }
 .hero__circle:hover {
-  animation-name: hvr-wobble-vertical;
+  animation-name: rotate-scale-up-diag-1;
   animation-duration: 2000ms;
 }
-@-webkit-keyframes hvr-wobble-vertical {
-  16.65% {
-    -webkit-transform: translateY(18px);
-    transform: translateY(18px);
+@-webkit-keyframes rotate-scale-up-diag-1 {
+  0% {
+    -webkit-transform: scale(1) rotate3d(1, 1, 0, 0deg);
+    transform: scale(1) rotate3d(1, 1, 0, 0deg);
   }
-  33.3% {
-    -webkit-transform: translateY(-12px);
-    transform: translateY(-12px);
-  }
-  49.95% {
-    -webkit-transform: translateY(8px);
-    transform: translateY(8px);
-  }
-  66.6% {
-    -webkit-transform: translateY(-4px);
-    transform: translateY(-4px);
-  }
-  83.25% {
-    -webkit-transform: translateY(2px);
-    transform: translateY(2x);
+  50% {
+    -webkit-transform: scale(2) rotate3d(1, 1, 0, -180deg);
+    transform: scale(2) rotate3d(1, 1, 0, -180deg);
   }
   100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
+    -webkit-transform: scale(1) rotate3d(1, 1, 0, -360deg);
+    transform: scale(1) rotate3d(1, 1, 0, -360deg);
   }
 }
-@keyframes hvr-wobble-vertical {
-  16.65% {
-    -webkit-transform: translateY(8px);
-    transform: translateY(8px);
+@keyframes rotate-scale-up-diag-1 {
+  0% {
+    -webkit-transform: scale(1) rotate3d(1, 1, 0, 0deg);
+    transform: scale(1) rotate3d(1, 1, 0, 0deg);
   }
-  33.3% {
-    -webkit-transform: translateY(-6px);
-    transform: translateY(-6px);
-  }
-  49.95% {
-    -webkit-transform: translateY(4px);
-    transform: translateY(4px);
-  }
-  66.6% {
-    -webkit-transform: translateY(-2px);
-    transform: translateY(-2px);
-  }
-  83.25% {
-    -webkit-transform: translateY(1px);
-    transform: translateY(1px);
+  50% {
+    -webkit-transform: scale(2) rotate3d(1, 1, 0, -180deg);
+    transform: scale(2) rotate3d(1, 1, 0, -180deg);
   }
   100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
+    -webkit-transform: scale(1) rotate3d(1, 1, 0, -360deg);
+    transform: scale(1) rotate3d(1, 1, 0, -360deg);
   }
-}
-.hero__circle .hvr-wobble-vertical {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-}
-.hero__circle .hvr-wobble-vertical:hover, .hero__circle .hvr-wobble-vertical:focus, .hero__circle .hvr-wobble-vertical:active {
-  -webkit-animation-name: hvr-wobble-vertical;
-  animation-name: hvr-wobble-vertical;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-timing-function: ease-in-out;
-  animation-timing-function: ease-in-out;
-  -webkit-animation-iteration-count: 1;
-  animation-iteration-count: 1;
 }
 .hero__icecream {
   position: absolute;
