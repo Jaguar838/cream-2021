@@ -308,10 +308,22 @@
   border-radius: 50%;
   border-style: none;
   background-color: getColor('main-bg');
+  cursor: pointer;
+  @include transitionType;
   @include for-size(desktop) {
     margin-top: 62px;
+  }
+  &:focus,
+  &:hover {
+    background-color: getColor('accent');
   }
 }
 .product-button-icon {
   fill: getColor('accent');
+}
+.product-button:hover > .product-button-icon {
+  fill: getColor('main-bg');
+}
+.product-button:focus > .product-button-icon {
+  fill: getColor('main-bg');
 }
