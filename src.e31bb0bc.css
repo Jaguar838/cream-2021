@@ -1259,6 +1259,11 @@ header .container {
     background-position: 0px 350px;
   }
 }
+@media screen and (min-width: 1280px) {
+  .section-tradition {
+    padding-top: 125px;
+  }
+}
 
 .tradition-subtitle {
   margin-top: 0;
@@ -1276,6 +1281,13 @@ header .container {
     margin-bottom: 16px;
     font-size: 26px;
     line-height: 1.15;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .tradition-subtitle {
+    margin-bottom: 15px;
+    font-size: 30px;
+    line-height: 1.13;
   }
 }
 
@@ -1298,21 +1310,33 @@ header .container {
     line-height: 1.15;
   }
 }
+@media screen and (min-width: 1280px) {
+  .tradition-title {
+    margin-bottom: 102px;
+    font-size: 58px;
+    line-height: 1.14;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .tradition-first-box {
     display: flex;
   }
 }
-
-.tradition-img {
+.tradition-first-box .tradition-img {
   display: block;
   width: 100%;
 }
 @media screen and (min-width: 768px) {
-  .tradition-img {
+  .tradition-first-box .tradition-img {
     width: 50%;
     height: 339px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .tradition-first-box {
+    width: 516px;
+    height: 516px;
   }
 }
 
@@ -1325,6 +1349,12 @@ header .container {
   .tradition-text-box {
     padding-left: 17px;
     padding-right: 17px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .tradition-text-box {
+    padding-left: 74px;
+    padding-right: 74px;
   }
 }
 
@@ -1340,12 +1370,31 @@ header .container {
   margin-bottom: 38px;
   color: #000000;
 }
+@media screen and (min-width: 1280px) {
+  .tradition-text.tradition-text--accent {
+    margin-bottom: 35px;
+  }
+}
 .tradition-text.traditiom-text--margin {
   margin-bottom: 10px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1280px) {
+  .tradition-text.traditiom-text--margin {
+    margin-bottom: 35px;
+  }
+}
+.tradition-text .tradition-btn {
+  margin-top: 17px;
+  padding: 9px 37px;
+  border: none;
+  border-radius: 22px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.76;
+}
+@media screen and (min-width: 1280px) {
   .tradition-text {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.76;
   }
 }
@@ -1360,6 +1409,10 @@ header .container {
   line-height: 1.29;
   color: #d41443;
   background-color: #ffffff;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.tradition-btn:hover, .tradition-btn:focus {
+  background-color: #ecebeb;
 }
 @media screen and (min-width: 768px) {
   .tradition-btn {
@@ -1367,6 +1420,15 @@ header .container {
     font-size: 16px;
     line-height: 1.31;
   }
+}
+@media screen and (min-width: 1280px) {
+  .tradition-btn {
+    margin-top: 45px;
+  }
+}
+
+.tradition-btn__icon {
+  margin-left: 13.62px;
 }
 
 .tradition-list {
@@ -1385,15 +1447,48 @@ header .container {
     flex-wrap: nowrap;
   }
 }
+@media screen and (min-width: 1280px) {
+  .tradition-list {
+    padding-top: 39px;
+  }
+}
+
+.tradition-list__icon {
+  display: inline-block;
+  margin-bottom: 16px;
+}
+@media screen and (min-width: 768px) {
+  .tradition-list__icon {
+    margin-bottom: 36px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .tradition-list__icon {
+    margin-bottom: 40px;
+  }
+}
 
 @media screen and (max-width: 767px) {
   .tradition-list__item:not(:last-child) {
     margin-bottom: 38px;
   }
 }
+.tradition-list__item:not(:last-child) .tradition-list__number {
+  margin-top: 0;
+  margin-bottom: 19px;
+  font-family: "Titan One", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #d41443;
+}
 @media screen and (min-width: 768px) {
-  .tradition-list__item:not(:last-child) {
-    margin-right: 60px;
+  .tradition-list__item:not(:last-child) .tradition-list__number {
+    font-size: 48px;
+    line-height: 1.15;
+    text-transform: lowercase;
   }
 }
 
@@ -1415,6 +1510,12 @@ header .container {
     text-transform: lowercase;
   }
 }
+@media screen and (min-width: 1280px) {
+  .tradition-list__number {
+    font-size: 58px;
+    line-height: 1.14;
+  }
+}
 
 .tradition-list__text {
   margin-top: 0;
@@ -1429,6 +1530,12 @@ header .container {
   .tradition-list__text {
     font-size: 14px;
     line-height: 1.74;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .tradition-list__text {
+    font-size: 16px;
+    line-height: 1.76;
   }
 }
 
@@ -1715,6 +1822,126 @@ header .container {
 
 .slick-track {
   display: flex;
+}
+
+.section-location {
+  position: relative;
+  background-repeat: no-repeat;
+}
+@media (min-width: 1280px) {
+  .section-location {
+    background-image: url("/location-bg.8f338b1e.png");
+  }
+}
+@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+  .section-location {
+    background-image: url("/location-bg@2x.a63b613e.png");
+  }
+}
+
+.location-card {
+  padding: 43px 21px 43px 20px;
+  border-radius: 24px;
+  background: #ffffff;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+}
+.location-card:nth-child(-n+2) {
+  margin-bottom: 20px;
+}
+
+.location-wrapper {
+  position: absolut;
+}
+
+.location-title {
+  font-family: "DM Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.86;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 25px;
+  border-radius: 4px;
+}
+.location-title__brown {
+  background: #f0d1a5;
+}
+.location-title__green {
+  background: #c2e297;
+}
+
+.location-city {
+  margin-bottom: 10px;
+}
+
+.location-description {
+  padding-bottom: 25px;
+  font-family: "DM Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.location-schedule {
+  padding: 25px 0;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+}
+.location-schedule__item:first-child {
+  font-family: "DM Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.86;
+  margin-bottom: 10px;
+}
+.location-schedule__day {
+  color: #000000;
+}
+.location-schedule__time {
+  color: #ffa5ba;
+}
+
+.location-list {
+  padding-top: 25px;
+}
+
+.location-contacts {
+  font-family: "DM Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #907e82;
+}
+.btn {
+  width: 161px;
+  height: 44px;
+  border-radius: 22px;
+  border-color: transparent;
+  outline: none;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.btn-location__our {
+  color: #ffffff;
+  background: #d41443;
+}
+.btn-location__franchise {
+  color: #d41443;
+  background: #ffffff;
 }
 
 .footer {
