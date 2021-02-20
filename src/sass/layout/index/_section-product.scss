@@ -110,6 +110,7 @@
   }
 }
 .product-pink-card {
+  animation: animateX50 3000ms infinite 1000ms;
   background-color: getColor('mainPink');
 }
 .product-pink-card::before {
