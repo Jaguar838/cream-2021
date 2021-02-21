@@ -328,3 +328,27 @@
 .product-button:focus > .product-button-icon {
   fill: getColor('main-bg');
 }
+.back_to_top {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  z-index: 9999;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  font-weight: 900;
+  background: getColor('accent');
+  color: getColor('whiteText');
+  cursor: pointer;
+  display: none;
+}
+
+.back_to_top:focus {
+  background: getColor('grey');
+}
+
+.back_to_top-show {
+  display: block;
+}
