@@ -558,13 +558,6 @@ header .container {
   padding-right: 15px;
 }
 
-.hero {
-  /*
-    &__button-products:hover {
-      background-color: #c7133e;
-    }
-  */
-}
 .hero .container {
   position: relative;
   top: 0;
@@ -587,6 +580,8 @@ header .container {
   border-radius: 50%;
   position: absolute;
   background-color: #ffa5ba;
+  animation-name: rotate-scale-up-diag-1;
+  animation-duration: 2000ms;
 }
 @media screen and (max-width: 767px) {
   .hero__circle {
@@ -611,10 +606,6 @@ header .container {
     right: 267px;
     top: 50px;
   }
-}
-.hero__circle:hover {
-  animation-name: rotate-scale-up-diag-1;
-  animation-duration: 2000ms;
 }
 @-webkit-keyframes rotate-scale-up-diag-1 {
   0% {
@@ -1052,6 +1043,7 @@ header .container {
 }
 
 .product-pink-card {
+  animation: animateX50 3000ms infinite 1000ms;
   background-color: #ffb8ca;
 }
 
@@ -1225,10 +1217,12 @@ header .container {
 .product-name::after {
   content: "";
   display: block;
+  margin-right: auto;
+  margin-left: auto;
   width: 26px;
   height: 6px;
   margin-top: 30px;
-  background-image: url("/sprite.856802d0.svg#icon-ellipsis");
+  background-image: url("/ellipsis.369416e4.svg");
 }
 
 .product-description {
@@ -1258,16 +1252,53 @@ header .container {
   border-radius: 50%;
   border-style: none;
   background-color: #ffffff;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),;
 }
 @media (min-width: 1280px) {
   .product-button {
     margin-top: 62px;
   }
 }
+.product-button:focus, .product-button:hover {
+  background-color: #d41443;
+}
 
 .product-button-icon {
-  display: flex;
   fill: #d41443;
+}
+
+.product-button:hover > .product-button-icon {
+  fill: #ffffff;
+}
+
+.product-button:focus > .product-button-icon {
+  fill: #ffffff;
+}
+
+.back_to_top {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  z-index: 9999;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  font-weight: 900;
+  background: #d41443;
+  color: #ffffff;
+  cursor: pointer;
+  display: none;
+}
+
+.back_to_top:focus {
+  background: #f0d1a5;
+}
+
+.back_to_top-show {
+  display: block;
 }
 
 .section-tradition {
@@ -2040,6 +2071,7 @@ img {
 .section-location {
   position: relative;
   background-repeat: no-repeat;
+  background-color: #fff5f6;
 }
 @media (min-width: 1280px) {
   .section-location {
@@ -2211,6 +2243,7 @@ img {
     line-height: 1.83;
   }
 }
+
 .btn-wrapper {
   display: block;
 }
