@@ -192,6 +192,14 @@ summary {
   pointer-events: none;
 }
 
+.is-hidden-backdrop {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  opacity: 0;
+  pointer-events: none;
+}
+
 .is-hidden {
   visibility: hidden;
   opacity: 0;
@@ -523,6 +531,7 @@ header .container {
 }
 
 .menu__button-mob {
+  outline-color: #ffa5ba;
   display: flex;
   color: #d41443;
   font-weight: 700;
@@ -553,6 +562,7 @@ header .container {
 .menu__button-tablet {
   z-index: 3;
   background-color: #ffffff;
+  outline-color: #ffa5ba;
   display: flex;
   color: #d41443;
   font-weight: 700;
@@ -785,6 +795,7 @@ header .container {
   }
 }
 .hero__button-products, .hero__button-made {
+  outline-color: #ffa5ba;
   border: none;
   border-radius: 12px;
   padding: 7px 15px;
@@ -997,6 +1008,7 @@ header .container {
   animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   animation-fill-mode: forwards;
   animation-delay: 0s;
+  cursor: pointer;
 }
 .hero__quantity-item {
   z-index: 2;
@@ -2775,6 +2787,15 @@ img {
   outline: transparent;
   border: 0;
   cursor: pointer;
+}
+.contact-us-form__submit-btn:hover, .contact-us-form__submit-btn:focus {
+  animation-name: animateMainButtonRed;
+  animation-duration: 500ms;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  animation-fill-mode: forwards;
+  animation-delay: 0s;
 }
 
 .submit-btn__text {
