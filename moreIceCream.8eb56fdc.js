@@ -117,20 +117,45 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"js/backdrop.js":[function(require,module,exports) {
-(function () {
-  var refs = {
-    openModalBtn: document.querySelector('[data-open-backdrop]'),
-    closeModalBtn: document.querySelector('[data-close-backdrop]'),
-    modal: document.querySelector('[data-backdrop]')
-  };
-  /*refs.openModalBtn.addEventListener('click', toggleModal);
-  refs.closeModalBtn.addEventListener('click', toggleModal);*/
+})({"js/moreIceCream.js":[function(require,module,exports) {
+// function readMore() {
+//     var dot = document.getElementById("dot");
+//     var moreIce = document.getElementById("moreIce");
+//     var iceCreamBtn = document.getElementById("iceCreamBtn");
+//     if (dot.style.display === "none") {
+//         dot.style.display = "inline";
+//         iceCreamBtn.innerHTML="more";
+//         moreIce.style.display = "none";
+//     }
+//     else {
+//          dot.style.display = "none";
+//         iceCreamBtn.innerHTML="Confirm";
+//         moreIce.style.display = "block";
+//     }
+// }
+document.getElementById('hider icecream').onclick = function () {
+  document.getElementById('read more icecream').hidden = true;
+};
 
-  function toggleModal() {
-    refs.modal.classList.toggle('is-hidden-backdrop');
-  }
-})();
+document.getElementById('opener icecream').onclick = function () {
+  document.getElementById('read more icecream').hidden = false;
+};
+
+document.getElementById('hider coffee').onclick = function () {
+  document.getElementById('read more coffee').hidden = true;
+};
+
+document.getElementById('opener coffee').onclick = function () {
+  document.getElementById('read more coffee').hidden = false;
+};
+
+document.getElementById('hider milkshake').onclick = function () {
+  document.getElementById('read more milkshake').hidden = true;
+};
+
+document.getElementById('opener milkshake').onclick = function () {
+  document.getElementById('read more milkshake').hidden = false;
+};
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -335,5 +360,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/backdrop.js"], null)
-//# sourceMappingURL=/backdrop.8db98b49.js.map
+},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/moreIceCream.js"], null)
+//# sourceMappingURL=/moreIceCream.8eb56fdc.js.map
