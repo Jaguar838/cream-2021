@@ -16,4 +16,5 @@
 <svg class="icon-arrow-right2" width="" height=""><use href="./images/sprite.svg#icon-arrow-right2"></use></svg>
 <svg class="icon-further" width="" height=""><use href="./images/sprite.svg#icon-further"></use></svg>
 
+<svg id="login" viewBox="0 0 32 32"><path d="M16 16a8 8 0 000-16 8 8 0 000 16zm0 4c-5.339 0-16 2.68-16 8v2c0 1.099.901 2 2 2h28c1.099 0 2-.901 2-2v-2c0-5.32-10.661-8-16-8z"></path></svg>
 
